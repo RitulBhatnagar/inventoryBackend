@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://spontaneous-tanuki-a34d0e.netlify.app/"],
+    origin: ["http://localhost:3000", "https://inventoryfrontend.onrender.com/"],
     credentials: true,
   })
 );
