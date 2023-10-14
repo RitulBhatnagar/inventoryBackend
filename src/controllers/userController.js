@@ -226,7 +226,7 @@ const forgotPassword = asyncHandler(async(req, res) => {
     throw new Error("user does not exisit")
   }
 
-let token = await Token.findOne({userId : user._d});
+let token = await Token.findOne({userId : user._id});
 if(token){
   await token.deleteOne();
 }
